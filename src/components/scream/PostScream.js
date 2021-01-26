@@ -6,6 +6,9 @@ import MyButton from '../../util/MyButton'
 
 //MUI stuff
 
+import AppBar from '@material-ui/core/AppBar'
+
+
 import Button from '@material-ui/core/Button'
 import {postScream, clearErrors} from '../../redux/actions/dataActions'
 
