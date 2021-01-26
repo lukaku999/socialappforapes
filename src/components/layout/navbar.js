@@ -17,7 +17,7 @@ class navbar extends Component {
         const {authenticated} = this.props
         return (
             <AppBar>
-                <Toolbar className="nav-container">
+                <ToolBar className="nav-container">
                     {authenticated ? (
                         <Fragment>
                            <PostScream/>
@@ -42,7 +42,7 @@ class navbar extends Component {
                         </Fragment>
                     )}
                    
-                </Toolbar>
+                </ToolBar>
 
             </AppBar>
         )
