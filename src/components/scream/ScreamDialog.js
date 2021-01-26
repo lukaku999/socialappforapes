@@ -5,8 +5,8 @@ import PropTypes from 'prop-types'
 import MyButton from '../../util/MyButton'
 
 //MUI stuff
-import AppBar from '@material-ui/core/AppBar'
-import ToolBar from '@material-ui/core/ToolBar'
+
+
 import Button from '@material-ui/core/Button'
 import {getScream, clearErrors} from '../../redux/actions/dataActions'
 
