@@ -2,6 +2,10 @@
   "name": "socialape-client",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "12.18.3",
+    "npm": "6.14.6"
+  },
   "dependencies": {
     "@material-ui/core": "^4.10.0",
     "@material-ui/icons": "^4.9.1",
@@ -25,7 +29,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,5 +49,8 @@
     ]
   },
   "proxy": "https://us-central1-socialapp-4276f.cloudfunctions.net/api",
-  "secure": "false"
+  "secure": "false",
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
 }
