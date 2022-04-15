@@ -15,7 +15,10 @@ const reducers = combineReducers({
     UI: uiReducer
 })
 
-const enhancer = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+//const enhancer = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+const enhancer = window.__REDUX_DEVTOOLS_EXTENSION__
+        ? window.__REDUX_DEVTOOLS_EXTENSION__()
+        : f => f
 
 const store = createStore(reducers, initialState, compose(applyMiddleware(...middleware), enhancer))
 
