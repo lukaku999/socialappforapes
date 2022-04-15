@@ -2,11 +2,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## First things first
 
-Run npm install
+Run npm install. After it is done making the necessary installations, run npm 
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run npm dev to launch the server.
 
 ### `npm start`
 
